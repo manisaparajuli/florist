@@ -1,0 +1,33 @@
+.icons {
+  height: 38px;
+  width: 38px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  box-shadow: 0 1px 3px -2px black;
+}
+
+.nav-logo{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-logo p {
+  color: green;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-menu{
+  display: flex;
+  align-item: center;
+  gap: 50px;
+  list-style: none;
+  color: grey;
+  font-size: 18px;
+  
+}
