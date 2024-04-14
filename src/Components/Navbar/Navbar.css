@@ -1,6 +1,5 @@
-.icons {
-  height: 38px;
-  width: 38px;
+*{
+  font-family: "Raleway", sans-serif;
 }
 
 .navbar{
@@ -15,9 +14,14 @@
   align-items: center;
   gap: 6px;
 }
+.nav-logo img{
+  height: 38px;
+  width: 38px;
+}
+
 
 .nav-logo p {
-  color: green;
+  color: #007a5a;
   font-size: 18px;
   font-weight: 600;
 }
@@ -29,5 +33,59 @@
   list-style: none;
   color: grey;
   font-size: 18px;
-  
+}
+/* .nav-menu li {
+  gap: 4px;
+} */
+
+.nav-menu li:after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  display: block;
+  transition: all 0.3s ease;
+}
+.nav-menu li:hover::after {
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+}
+
+.nav-login-cart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.nav-login-cart button{
+  font-family: "Raleway", sans-serif;
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border: 1px solid #007a5a;
+  color: #007a5a;
+  font-weight: 600;
+  background: #fff;
+  padding: 2px 18px;
+  font-size: 18px;
+  border-radius: 20px;
+  height: 36px;
+  transition: all 80ms linear;
+}
+.nav-login-cart button:hover{
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 8%);
+    background: rgba(248,248,248,1);
+}
+
+.nav-login-cart button:active{
+  background: #007a5a;
+  color: grey;
+}
+
+
+.nav-login-cart img {
+  height: 32px;
+  width: 40px;
+  color: grey;
 }
