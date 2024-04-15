@@ -8,7 +8,7 @@ const Items = () => {
       <div className='card'>
         {data.map((item)=> {
           return <div  className='item'>
-            <img src={item.image} alt={item.name} className='card-image' />
+            <img src={item.image}  className='card-image' alt="" />
             <div className='card-content'>
               <h5>{item.name}</h5>
               <h5>$ {item.price}.00</h5>

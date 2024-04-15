@@ -5,11 +5,15 @@
 
 .navbar{
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   justify-content: space-around;
   align-items: center;
   padding: 8px;
   box-shadow: 0 1px 3px -2px black;
   cursor: pointer;
+  background: white;
 }
 
 .nav-logo{
