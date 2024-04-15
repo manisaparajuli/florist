@@ -1,0 +1,60 @@
+.hero-container{
+  margin : 14px 24px;
+  text-align: center;
+}
+
+h1{
+  color: #6e6868;
+  font-size: 32px;
+  font-weight: 600;
+}
+.green-text {
+  color: #007a5a;
+}
+
+.yellow-text {
+  color: #ffd700;
+}
+
+.hero-container button{
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgb(72, 76, 122);
+  font-size: 14px;
+  height: 38px;
+  padding: 8px 24px;
+  border-radius: 50px;
+  /* background-color: #ffd700; */
+  background-image: linear-gradient(180deg,#fff,#f5f5fa);
+  box-shadow: 0 4px 11px 0 rgb(37 44 97 / 15%), 0 1px 3px 0 rgb(93 100 148 / 20%);
+  transition: all .2s ease-out;
+}
+.hero-container button:hover{
+  box-shadow: 0 8px 22px 0 rgb(37 44 97 / 15%), 0 4px 6px 0 rgb(93 100 148 / 20%);
+}
+
+.image-container{
+  display: flex;
+  overflow: hidden;
+  justify-content: space-evenly;
+}
+
+.first-image{
+  height: 290px;
+  weight: 290px;
+  filter: drop-shadow(-5px -1px 3px grey);
+}
+.second-image{
+  /* padding-top: 40px; */
+  height: 380px;
+  weight: 380px;
+  filter: drop-shadow(-5px -1px 3px grey);
+}
+.third-image{
+  height: 260px;
+  weight: 260px;
+  filter: drop-shadow(-5px -1px 3px grey);
+}
