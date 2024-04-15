@@ -5,6 +5,7 @@ import catathea from "../Components/Assests/calathea.png"
 import monstera from "../Components/Assests/monstera.png"
 import ballet from "../Components/Assests/ballet.png"
 import ranunculus from "../Components/Assests/ranunculus.png"
+import colorful from "../Components/Assests/colorful.png"
 export  const data = [
   {
     id: 1,
@@ -53,15 +54,15 @@ export  const data = [
     price : 19,
     description : "Meet the Peperomia Watermelon, a delightful addition to your plant collection. Its vibrant green leaves, adorned with striking watermelon-like patterns, bring a playful charm to any space. Compact and easy to care for, this petite plant thrives in bright, indirect light, making it perfect for desks, shelves, or windowsills. With its unique foliage and low-maintenance nature, the Peperomia Watermelon is sure to be a conversation starter and a cherished accent in your home or office.",
     quantity : 7,
-    image: peperomia,
+    image: peperomia
   },
   {
     id: 2,
-    name : "Peperomia Watermelon",
+    name : "Colourful pot",
     price : 19,
     description : "Meet the Peperomia Watermelon, a delightful addition to your plant collection. Its vibrant green leaves, adorned with striking watermelon-like patterns, bring a playful charm to any space. Compact and easy to care for, this petite plant thrives in bright, indirect light, making it perfect for desks, shelves, or windowsills. With its unique foliage and low-maintenance nature, the Peperomia Watermelon is sure to be a conversation starter and a cherished accent in your home or office.",
     quantity : 7,
-    image: peperomia,
+    image: colorful
   }
   
 ]

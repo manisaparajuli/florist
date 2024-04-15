@@ -42,19 +42,81 @@ h1{
   justify-content: space-evenly;
 }
 
-.first-image{
-  height: 290px;
-  weight: 290px;
-  filter: drop-shadow(-5px -1px 3px grey);
-}
+
 .second-image{
-  /* padding-top: 40px; */
-  height: 380px;
+  height: 342px;
   weight: 380px;
   filter: drop-shadow(-5px -1px 3px grey);
 }
-.third-image{
-  height: 260px;
-  weight: 260px;
-  filter: drop-shadow(-5px -1px 3px grey);
+
+.scroll-container {
+  background-color: #007a5a;
+  overflow: hidden;
+  padding: 6px;
+}
+
+.scroll-text {
+  text-align: right;
+  color : white;
+  /* animation properties */
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 25s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(-100%); }
+  to { -moz-transform: translateX(100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(-100%); }
+  to { -webkit-transform: translateX(100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+.indoorplant{
+  height: 400px;
+  width: 500px;
+}
+.indoorplant-section{
+  line-height: 1.6;
+  color: #6e6868;
+  margin: 0px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.description{
+  padding: 24px;
+  text-align: center;
+}
+
+.low-price-section{
+  line-height: 1.6;
+  color: #6e6868;
+  margin: 0px 0px;
+  text-align: center;
+  background:  #0299031a;
+  padding: 48px 162px;
+}
+.low-price-section h2{
+  margin-top: 0px;
 }
