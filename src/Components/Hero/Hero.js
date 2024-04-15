@@ -1,9 +1,7 @@
 import React from 'react'
 import './Hero.css'
-import image1 from '../Assests/firstImage.png'
-import image2 from '../Assests/secondImage.png'
-import image3 from '../Assests/thirdImage.png'
-
+import image2 from '../Assests/Peperomia.png'
+import Items from '../items/Items'
 
 const Hero = () => {
   return (
@@ -13,11 +11,10 @@ const Hero = () => {
         <button>View all product </button>
       </div>
       <div className='image-container'>
-        {/* <img src={image1} alt="plant image" className='first-image'/>  */}
         <img src={image2} alt="plant image" className='second-image'/>
-        {/* <img src={image3} alt="plant image" className='third-image'/> */}
-        
       </div>
+      <h2> People's choice:</h2>
+      <Items/>
     </>
   )
 }
