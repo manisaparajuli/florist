@@ -2,6 +2,7 @@
   font-family: "Raleway", sans-serif;
 }
 
+
 .navbar{
   display: flex;
   justify-content: space-around;
@@ -35,9 +36,11 @@
   list-style: none;
   color: grey;
   font-size: 18px;
+  font-weight: 600;
 }
 
 .nav-menu li:after {
+  text-decoration: none;
   content: "";
   width: 0%;
   height: 1px;
