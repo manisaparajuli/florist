@@ -8,6 +8,7 @@ import Product from './Pages/Product'
 import Cart from './Pages/Cart';
 import Authentication from './Pages/Authentication';
 import Footer from  './Components/Footer/Footer'
+import NoMatch from './Pages/NoMatch';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           </Route>
           <Route path='/cart' element={<Cart/> } />
           <Route path='/authentication' element={<Authentication/> } />
+          <Route path='*' element={<NoMatch/> } />
         </Routes>
       <Footer/>
     </div>
