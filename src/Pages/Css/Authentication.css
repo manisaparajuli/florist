@@ -63,3 +63,13 @@ form{
     display: block;
     text-decoration: none;
 }
+
+@media (min-width: 250px) and  (max-width: 540px;){
+    .login{
+        width: 300px;
+        margin: 6px 0px;
+    }
+    form{
+        width: 80%;
+    }
+}
