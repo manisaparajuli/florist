@@ -1,14 +1,18 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { useContext } from 'react'
-import { ShopContext } from '../../Context/ShopContext'
+import Breadcrum from '../Breadcrums/Breadcrum'
+import {data} from '../../data/items.js'
 
 const ViewItem = () => {
-  const allItem = useContext(ShopContext);
-  
+  const { productId } = useParams();
+  console.log(productId)
+  const product = data.find(e => e.id == productId)
+  console.log(product)
+
   return (
     <div>
-      product details
+      <Breadcrum product={product}/>
+      this is a view page
     </div>
   )
 }

@@ -10,6 +10,7 @@ import Authentication from './Pages/Authentication';
 import Footer from  './Components/Footer/Footer'
 import NoMatch from './Pages/NoMatch';
 import Login from './Pages/Login';
+import ViewItem from './Components/ViewItem/ViewItem';
 
 function App() {
   return (
@@ -20,9 +21,8 @@ function App() {
           <Route path="/home" element={ <Home/> } />
           <Route path="/about" element={ <About/> } />
           <Route path="/events" element={ <Events/> } />
-          <Route path="/product" element={ <Product/> } >
-            <Route path=':productId' element={<Product/> } />
-          </Route>
+          <Route exact path="/product" element={ <Product/> } />
+          <Route path='product/:productId' element={<ViewItem/> } />
           <Route path='/cart' element={<Cart/> } />
           <Route path='/authentication' element={<Authentication/> } />
           <Route path='/login' element={<Login/> } />

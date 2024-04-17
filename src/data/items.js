@@ -41,7 +41,7 @@ export  const data = [
     image: ballet,
   },
   {
-    id: 6,
+    id: 3,
     name : "Rainbow Ranunculus",
     price : 420,
     description : "Introducing our vibrant and lively 'Rainbow Ranunculus' bouquet - a burst of color to brighten any day. These charming blooms boast a kaleidoscope of hues, ranging from bold reds to soft pinks, sunny yellows, and serene blues, creating a symphony of color that captivates the eye. Each delicate petal unfolds like a tiny work of art, radiating joy and vitality. Whether adorning a special occasion or simply bringing cheer to your home, our Rainbow Ranunculus bouquet is a celebration of life's beauty and diversity.",
@@ -57,7 +57,7 @@ export  const data = [
     image: peperomia
   },
   {
-    id: 2,
+    id: 7,
     name : "Colourful pot",
     price : 19,
     description : "Meet the Peperomia Watermelon, a delightful addition to your plant collection. Its vibrant green leaves, adorned with striking watermelon-like patterns, bring a playful charm to any space. Compact and easy to care for, this petite plant thrives in bright, indirect light, making it perfect for desks, shelves, or windowsills. With its unique foliage and low-maintenance nature, the Peperomia Watermelon is sure to be a conversation starter and a cherished accent in your home or office.",
