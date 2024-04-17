@@ -6,6 +6,7 @@ import monstera from "../Components/Assests/monstera.png"
 import ballet from "../Components/Assests/ballet.png"
 import ranunculus from "../Components/Assests/ranunculus.png"
 import colorful from "../Components/Assests/colorful.png"
+import blushing from "../Components/Assests/blushing.png"
 export  const data = [
   {
     id: 1,
@@ -63,6 +64,14 @@ export  const data = [
     description : "Meet the Peperomia Watermelon, a delightful addition to your plant collection. Its vibrant green leaves, adorned with striking watermelon-like patterns, bring a playful charm to any space. Compact and easy to care for, this petite plant thrives in bright, indirect light, making it perfect for desks, shelves, or windowsills. With its unique foliage and low-maintenance nature, the Peperomia Watermelon is sure to be a conversation starter and a cherished accent in your home or office.",
     quantity : 7,
     image: colorful
+  },
+  {
+    id: 8,
+    name : "Blushing Harmony",
+    price : 54,
+    description : "Immerse yourself in the ethereal beauty of our 'Blushing Harmony'bouquet, where the gentle whispers of pink and the pristine elegance of white roses converge in a symphony of natural grace. Expertly curated by our artisans, each bloom is meticulously chosen for its freshness and allure, ensuring a captivating display that speaks volumes without words. The delicate blush of pink roses symbolizes admiration and sweetness, while the purity of white roses evokes innocence and new beginnings. Together, they create a harmonious blend that transcends any occasion, whether it's a celebration of love, a token of appreciation, or a moment of solace.",
+    quantity : 7,
+    image: blushing
   }
   
 ]
