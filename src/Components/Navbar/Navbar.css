@@ -1,8 +1,6 @@
 *{
   font-family: "Raleway", sans-serif;
 }
-
-
 .navbar{
   display: flex;
   position: sticky;
@@ -127,12 +125,53 @@
   justify-content: space-between;
   width: 2.25rem;
   height: 2rem;
-  display:flex;
+  display:none;
 
 }
-.menu span{
-  height: 0.4rem;
-  width: 100%;
-  background-color: #007a5a;
-  border-radius: 0.2rem
+
+.login-btn{
+  display: none;
+}
+.close{
+  display: none;
+}
+
+@media (max-width: 480px){
+  .nav-logo{
+    display: flex;
+  }
+  .menu{
+    display: flex;
+    
+  }
+  .login-btn{
+  display: flex;
+  text-align: center;
+  
+}
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: start;
+    display: none;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+  .nav-login-cart{
+    display:none;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    text-align: center;
+    margin: 0.2rem 0.5rem;
+  }
+
+  .menu img {
+    background: green;
+    padding: 4px;
+    border-radius: 8px;
+  }
+  
+
 }
