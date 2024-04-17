@@ -15,6 +15,11 @@ const Navbar = () => {
         <img  src={logo} alt="florist logo here" />
         <p>The florist</p>
       </div>
+      <div className="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
         <ul className="nav-menu">
           <li onClick={() => handleItemClick('home')} className={activeItem === 'home' ? 'active' : ''}><Link to="/home" style={{textDecoration: "none", color: "inherit"}}> Home</Link></li>
           <li onClick={() => handleItemClick('product')} className={activeItem === 'product' ? 'active' : ''}><Link to="/product" style={{textDecoration: "none", color: "inherit"}}>Product</Link></li>

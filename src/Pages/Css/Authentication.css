@@ -41,6 +41,7 @@ form{
     background: #fff;
     border: 1px solid #007a5a;
     font-size: 20px;
+    font-weight: 600;
     color: #007a5a;
     cursor: pointer;
 }

@@ -118,3 +118,21 @@
   background-color: green;
 
 }
+
+.menu{
+  position: absolute;
+  top: 0.7rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+  display:flex;
+
+}
+.menu span{
+  height: 0.4rem;
+  width: 100%;
+  background-color: #007a5a;
+  border-radius: 0.2rem
+}

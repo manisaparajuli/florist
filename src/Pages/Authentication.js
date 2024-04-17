@@ -19,7 +19,7 @@ const Authentication = () => {
             <input type="password"  name="password" placeholder="password" className="text_input" />
           </div>
           <div className="text_area">
-            <input type="password"  name="confirm password" placeholder="password" className="text_input" />
+            <input type="password"  name="password" placeholder="confirm password" className="text_input" />
           </div>
           <button type="submit" value="Sign Up" className="btn">Sign up</button>
           <p>Already have an acccount?</p>
