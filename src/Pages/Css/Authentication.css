@@ -1,6 +1,6 @@
 .login-container{
-    background: linear-gradient(135deg, #1B8AF1, #B58DED); 
-    /* height: 100vh; */
+    background: rgb(0,122,90);
+    background: linear-gradient(321deg, rgba(0,122,90,0.636467086834734) 21%, rgba(255,215,0,0.6756827731092436) 100%);
     width: 100%;
     text-align: center;
 } 
@@ -14,7 +14,6 @@ h4{
 form{
     display: inline-block;
     align-items: center;
-    height: 264px;
     width: 350px;
     margin-bottom: 170px;
 }
@@ -39,11 +38,10 @@ form{
     width: 165px;
     height: 42px;
     border-radius: 30px;
-    background: #B58DED;
-    border: none;
+    background: #fff;
+    border: 1px solid #007a5a;
     font-size: 20px;
-    color: #FFFFFF;
-    box-shadow: 0 4px 8px 0 rgba(181, 141, 237, 0.7), 0 6px 20px 0 rgba(181, 141, 237, 0.9);
+    color: #007a5a;
     cursor: pointer;
 }
 

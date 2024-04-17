@@ -9,6 +9,7 @@ import Cart from './Pages/Cart';
 import Authentication from './Pages/Authentication';
 import Footer from  './Components/Footer/Footer'
 import NoMatch from './Pages/NoMatch';
+import Login from './Pages/Login';
 
 function App() {
   return (
@@ -23,8 +24,8 @@ function App() {
             <Route path=':productId' element={<Product/> } />
           </Route>
           <Route path='/cart' element={<Cart/> } />
-          <Route path='/signup' element={<Authentication/> } />
-          <Route path='/login' element={<Authentication/> } />
+          <Route path='/authentication' element={<Authentication/> } />
+          <Route path='/login' element={<Login/> } />
           <Route path='*' element={<NoMatch/> } />
         </Routes>
       <Footer/>

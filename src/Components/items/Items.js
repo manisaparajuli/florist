@@ -9,8 +9,8 @@ const Items = () => {
     <div className='container'>
       <div className='card'>
         {data.map((item)=> {
-          return <div  className='item' onClick={() => navigate(`${item.id}`)}>
-            <img src={item.image}  className='card-image' alt="" />
+          return <div  className='item' >
+            <img src={item.image}  className='card-image' alt="" onClick={() => navigate(`${item.id}`)}/>
             <button className='Add-to-cart' onClick={() => navigate('/home')}>Add to cart</button>
             <div className='card-content'>
               <h5>{item.name}</h5>
