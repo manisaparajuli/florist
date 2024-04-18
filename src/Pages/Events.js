@@ -4,7 +4,6 @@ import Event from '../Components/EventM/Event'
 const Events = () => {
   return (
     <div>
-      event page
       <Event/>
     </div>
   )
