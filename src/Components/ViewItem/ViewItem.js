@@ -5,6 +5,7 @@ import {data} from '../../data/items.js'
 import "./ViewItem.css"
 import { useNavigate } from 'react-router-dom'
 
+
 const ViewItem = () => {
   const { productId } = useParams();
   const product = data.find(e => e.id === Number(productId))
@@ -29,8 +30,8 @@ const ViewItem = () => {
           <p>{product.careTips}</p>
         </div>
       </div>
-
-
+      <h4>Similar products:</h4>
+      <p>TODO: use category to suggest similar products.</p>
     </div>
   )
 }
