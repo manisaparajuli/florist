@@ -14,15 +14,23 @@ const ViewItem = () => {
     <div className='view-item-page'>
       <Breadcrum product={product}/>
       <div className='product-container'>
-        <img src={product.image} alt="" />
+      <img className="main-image"src={product.image} alt="" />
         <div className='view-item-content'>
           <h2>{product.name}</h2>
-          <p>Price: {product.price}</p>
-          <p>Quantity: {product.quantity}</p>
+          <p>Price: ${product.price}.00</p>
           <p>{product.description}</p>
           <button className='Add-to-cart' onClick={() => navigate('/home')}>Add to cart</button>
         </div>
       </div>
+      <div class="c">
+        <input type="checkbox" id="faq-1"/>
+        <h3><label for="faq-1">How to take care of "{product.name}" ?</label></h3>
+        <div class="p">
+          <p>{product.careTips}</p>
+        </div>
+      </div>
+
+
     </div>
   )
 }
