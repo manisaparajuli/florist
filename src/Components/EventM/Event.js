@@ -1,6 +1,6 @@
 import React from 'react'
 import './Event.css'
-import promoImg from "../Assests/2.png"
+import promoImg from "../Assests/promoImage.png"
 import brideImage from "../Assests/brides.jpg"
 import brideBouquet from "../Assests/wedding-bouquet.jpg"
 
