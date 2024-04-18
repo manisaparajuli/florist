@@ -17,6 +17,7 @@
 .event-container img{
   width: 180px;
   height: 100%;
+  
 }
 
 
@@ -38,4 +39,33 @@
 }
 .event-container button:hover{
   box-shadow: 0 8px 22px 0 rgb(37 44 97 / 15%), 0 4px 6px 0 rgb(93 100 148 / 20%);
+}
+
+.second-section{
+  display: flex;
+  margin: 18px;
+  /* border: solid black; */
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 18px;
+}
+
+.images .first-image{
+  width: 260px;
+  border: solid white;
+  
+}
+.images .second-image{
+  border: solid white;
+  width: 220px;
+  height: 220px;
+  top: 18px;
+  /* height: auto; */
+  position: relative;
+  z-index: 1;
+  left: 52px;
+  box-shadow: none;
+}
+.second-section .second-content{
+  width: 40%;
 }
