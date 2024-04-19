@@ -1,0 +1,12 @@
+.mission-container{
+  display : flex;
+  margin: 42px 18px 42px 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+.mission-container img{
+  width: 35%;
+}
+.mission-content{
+  padding: 70px;
+}
