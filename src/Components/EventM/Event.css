@@ -38,7 +38,18 @@
 .third-section {
   text-align: center;
   margin: 18px 28px;
+  
 }
 .third-section p{
   padding: 12px;
+}
+.third-section img{
+  width: 10%;
+  /* position: relative; */
+  
+}
+.third-section-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

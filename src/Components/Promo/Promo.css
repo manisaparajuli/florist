@@ -4,9 +4,11 @@
   justify-content: center;
   align-items: center;
   margin: 32px 142px;
-  background-color: #ffd8076b;
+  /* background-color: #ffd8076b; */
   border-radius: 56px;
   color: #6e6868;
+  background: rgb(0,122,90);
+  background: linear-gradient(321deg, rgba(0,122,90,0.636467086834734) 21%, rgba(255,215,0,0.6756827731092436) 100%);
 }
 
 .event-content{

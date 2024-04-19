@@ -3,9 +3,9 @@ import Items from '../Components/items/Items'
 
 const Product = () => {
   return (
-    <div>
+    <>
       <Items/>
-    </div>
+    </>
   )
 }
 

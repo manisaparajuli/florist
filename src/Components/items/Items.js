@@ -3,11 +3,13 @@ import "./items.css"
 import { data } from "../../data/items"
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import Promo  from "../Promo/Promo"
 
 const Items = () => {
   const navigate = useNavigate()
   return (
     <div className='container'>
+      <Promo />
       <div className='card'>
         {data.map((item)=> {
           return <div  className='item' key={item.id}>
