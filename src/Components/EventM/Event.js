@@ -35,7 +35,10 @@ const Event = () => {
 
       <div className='fourth-section'>
         <img src={decors} alt="" />
-        
+        <div className="fourth-section-content">
+          <p>Whether you're planning an intimate gathering or a grand celebration, The florist is here to make your event truly unforgettable. Contact us today to schedule a consultation and discover how we can turn your dreams into reality with our exquisite floral arrangements and event decoration services. Let's create moments that will be cherished for a lifetime!</p>
+          <button>Contact us.</button>
+        </div>
       </div>
     </>
   )
