@@ -4,6 +4,7 @@ import floraFrame from "../Assests/floraframe.png"
 import brideImage from "../Assests/brides.jpg"
 import brideBouquet from "../Assests/wedding-bouquet.jpg"
 import Promo from '../Promo/Promo'
+import decors from "../Assests/decors.jpeg"
 
 const Event = () => {
   return (
@@ -27,8 +28,14 @@ const Event = () => {
         <div className='third-section-content'>
           <img src={floraFrame} alt="" />
           <p>From elegant bouquets to enchanting centerpieces, our skilled florists are here to transform your vision into reality. </p>
+          <img src={floraFrame} alt=""  className='image-flip'/>
         </div>
         <hr />
+      </div>
+
+      <div className='fourth-section'>
+        <img src={decors} alt="" />
+        
       </div>
     </>
   )

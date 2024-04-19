@@ -40,9 +40,7 @@
   margin: 18px 28px;
   
 }
-.third-section p{
-  padding: 12px;
-}
+
 .third-section img{
   width: 10%;
   /* position: relative; */
@@ -52,4 +50,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.image-flip{
+  transform: scaleX(-1);
+}
+
+.fourth-section img{
+  width: 25%;
 }

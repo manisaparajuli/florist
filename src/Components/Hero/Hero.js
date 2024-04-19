@@ -3,6 +3,7 @@ import './Hero.css'
 import image2 from '../Assests/Peperomia.png'
 import indoorplant from "../Assests/indoorPlant.jpg"
 import { useNavigate } from 'react-router-dom'
+import floraFrame from "../Assests/floraframe.png"
 
 const Hero = () => {
   const navigate = useNavigate()
@@ -25,6 +26,17 @@ const Hero = () => {
           <p>Delight in the assurance that our plants are cultivated with meticulous care, undergoing thorough inspections to guarantee they are organically grown and entirely free from harmful chemicals. Experience the joy of transforming your indoor environment into a verdant sanctuary, as our lush and vibrant selection breathes new life into your space, creating a refreshing oasis of natural beauty and tranquility.</p>
         </div>
       </div>
+
+      <div className='third-section'>
+        <hr />
+        <div className='third-section-content'>
+          <img src={floraFrame} alt="" />
+          <p>From elegant bouquets to enchanting centerpieces, our skilled florists are here to transform your vision into reality. </p>
+          <img src={floraFrame} alt=""  className='image-flip'/>
+        </div>
+        <hr />
+      </div>
+
       <div className='low-price-section'>
         <h2>Lowest price guarantee</h2>
         <p>At our website, we proudly offer a Lowest Price Guarantee, ensuring that you always get the best deal possible. If you find the same product elsewhere at a lower price, we'll match it or refund the difference, because your satisfaction and savings are our top priority.</p>

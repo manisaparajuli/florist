@@ -8,8 +8,9 @@ import Promo  from "../Promo/Promo"
 const Items = () => {
   const navigate = useNavigate()
   return (
+    <>
+    <Promo />
     <div className='container'>
-      <Promo />
       <div className='card'>
         {data.map((item)=> {
           return <div  className='item' key={item.id}>
@@ -25,6 +26,7 @@ const Items = () => {
         })}
       </div>
     </div>
+    </>
   )
 }
 
