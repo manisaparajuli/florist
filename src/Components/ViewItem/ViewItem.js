@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import Breadcrum from '../Breadcrums/Breadcrum'
 import {data} from '../../data/items.js'
 import "./ViewItem.css"
-import { useNavigate } from 'react-router-dom'
+import { ShopContext } from '../../Context/shop-contex.js'
+
 
 
 const ViewItem = () => {
   const { productId } = useParams();
   const product = data.find(e => e.id === Number(productId))
-  const navigate = useNavigate()
+  const{ addToCart, cartItems} = useContext(ShopContext)
+  
 
   return (
     <div className='view-item-page'>
@@ -20,13 +22,13 @@ const ViewItem = () => {
           <h2>{product.name}</h2>
           <p>Price: ${product.price}.00</p>
           <p>{product.description}</p>
-          <button className='Add-to-cart' onClick={() => navigate('/home')}>Add to cart</button>
+          <button className='Add-to-cart' onClick={() => addToCart(product.id)}>Add to cart {cartItems[product.id] > 0 && <>({cartItems[product.id]}) </>}</button>
         </div>
       </div>
-      <div class="c">
+      <div className="c">
         <input type="checkbox" id="faq-1"/>
-        <h3><label for="faq-1">How to take care of "{product.name}" ?</label></h3>
-        <div class="p">
+        <h3><label htmlFor="faq-1">How to take care of "{product.name}" ?</label></h3>
+        <div className="p">
           <p>{product.careTips}</p>
         </div>
       </div>
