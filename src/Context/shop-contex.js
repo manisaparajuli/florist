@@ -57,20 +57,9 @@ export const ShopContextProvider = (props) => {
   const checkout = () => {
     setCartItems(getDefaultCart());
   };
-  console.log(typeof(cartCount))
 
-  // useEffect(() => {
-  //   localStorage.setItem("myCart", JSON.stringify(cartItems))
-  // }, [cartItems])
 
-  // const getLocalCartData = () => {
-  //   let localCartData = localStorage.getItem("myCart")
-  //   if(localCartData.length != {}){
-  //     return JSON.parse(localCartData)
-  //   }else {
-  //     return {};
-  //   }
-  // }
+
 
   const contextValue = {
     cartItems,
@@ -80,6 +69,7 @@ export const ShopContextProvider = (props) => {
     getTotalCartAmount,
     checkout,
     cartCount,
+    
   };
 
   return (

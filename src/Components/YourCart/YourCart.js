@@ -14,7 +14,9 @@ export const YourCart = () => {
   return (
     <div className="">
       <div className="your-cart-items">
+        <hr />
         <h1>Your Cart Items</h1>
+        <hr />
       </div>
       <div className="cart">
         {data.map((product) => {

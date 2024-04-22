@@ -4,7 +4,7 @@ import "./YourCart.css"
 
 export const DisplayCart = (props) => {
   const { id, name, price, image, quantity } = props.product;
-  const { cartItems, addToCart, removeFromCart, updateCartItemCount } =
+  const { cartItems, addToCart, removeFromCart, updateCartItemCount, daleteAllFromCart } =
     useContext(ShopContext);
 
   return (
