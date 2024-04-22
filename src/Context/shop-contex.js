@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { data } from "../data/items";
 
 export const ShopContext = createContext(null);
@@ -14,6 +14,10 @@ const getDefaultCart = () => {
 export const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
+  useEffect(() => {
+    localStorage.setItem("myCart", JSON.stringify(cartItems))
+  }, [cartItems])
+
   const getTotalCartAmount = () => {
     let totalAmount = 0;
     for (const item in cartItems) {
@@ -27,6 +31,7 @@ export const ShopContextProvider = (props) => {
 
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+    
   };
 
   const removeFromCart = (itemId) => {
@@ -40,6 +45,19 @@ export const ShopContextProvider = (props) => {
   const checkout = () => {
     setCartItems(getDefaultCart());
   };
+
+  // useEffect(() => {
+  //   localStorage.setItem("myCart", JSON.stringify(cartItems))
+  // }, [cartItems])
+
+  const getLocalCartData = () => {
+    let localCartData = localStorage.getItem("myCart")
+    if(localCartData.length != {}){
+      return JSON.parse(localCartData)
+    }else {
+      return {};
+    }
+  }
 
   const contextValue = {
     cartItems,

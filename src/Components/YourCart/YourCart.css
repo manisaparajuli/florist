@@ -1,0 +1,6 @@
+.your-cart-items{
+  display: flex;
+  align-items: center;
+  border: solid black;
+  text-align: center;
+}

@@ -8,6 +8,7 @@ export const DisplayCart = (props) => {
 
   return (
     <div className="cartItem">
+      <p>{localStorage.getItem("mycart")}</p>
       <img src={image} alt=""/>
       <div className="description">
         <p>
