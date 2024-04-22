@@ -1,6 +1,25 @@
 .your-cart-items{
-  display: flex;
-  align-items: center;
-  border: solid black;
   text-align: center;
+}
+
+.cartItem{
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 12px;
+  border: solid gray;
+}
+
+.cartItem b{
+  color: #007a5a;
+}
+
+.cartItem img{
+  width: 12%;
+}
+
+.checkout{
+  text-align: center;
+  margin: 12px;
 }

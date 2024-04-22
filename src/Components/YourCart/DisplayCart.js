@@ -1,21 +1,20 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../Context/shop-contex";
+import "./YourCart.css"
 
 export const DisplayCart = (props) => {
-  const { id, name, price, image } = props.product;
+  const { id, name, price, image, quantity } = props.product;
   const { cartItems, addToCart, removeFromCart, updateCartItemCount } =
     useContext(ShopContext);
 
   return (
-    <div className="cartItem">
-      <p>{localStorage.getItem("mycart")}</p>
-      <img src={image} alt=""/>
-      <div className="description">
-        <p>
+    <div className="cartItem" key={id}>
+        <img src={image} alt=""/>
+        <div className="description">
           <b>{name}</b>
-        </p>
-        <p> Price: ${price}</p>
-        <div className="countHandler">
+          <p> Price: ${price}</p>
+        </div>
+        <div className="countHandler">Quantity: 
           <button onClick={() => removeFromCart(id)}> - </button>
           <input
             value={cartItems[id]}
@@ -24,6 +23,5 @@ export const DisplayCart = (props) => {
           <button onClick={() => addToCart(id)}> + </button>
         </div>
       </div>
-    </div>
   );
 };

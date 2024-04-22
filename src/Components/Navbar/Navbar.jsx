@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import './Navbar.css';
 import logo from '../Assests/bliss-logo.png';
 import cart from '../Assests/add-to-cart.png';
 import { Link } from 'react-router-dom';
 import closeIcon from "../Assests/closeIcon.png";
 import menuIcon from "../Assests/menuIcon.png";
+import { ShopContext } from "../../Context/shop-contex";
 
 
 
@@ -14,6 +15,8 @@ const Navbar = () => {
   const handleItemClick = (item) => {
     setActiveItem(item);
   };
+  const { cartCount } = useContext(ShopContext);
+  
 
 
   return (
@@ -38,7 +41,7 @@ const Navbar = () => {
         <div className="nav-login-cart">
           <Link to="/authentication"><button>Login</button></Link>
           <Link to="/cart"><img  src={cart} alt="cart" /></Link>
-          <div className='nav-cart-count'>0</div>
+          <div className='nav-cart-count'>{cartCount}</div>
         </div>
     </div>
   )

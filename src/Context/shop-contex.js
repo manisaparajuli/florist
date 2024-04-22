@@ -3,8 +3,17 @@ import { data } from "../data/items";
 
 export const ShopContext = createContext(null);
 
+const getLocalCartData = () => {
+    const localCartData = localStorage.getItem("myCart")
+    if(localCartData.length != {}){
+      return JSON.parse(localCartData)
+    }else {
+      return {};
+    }
+  }
+
 const getDefaultCart = () => {
-  let cart = {};
+  let cart = getLocalCartData();
   for (let i = 1; i < data.length + 1; i++) {
     cart[i] = 0;
   }
@@ -13,6 +22,7 @@ const getDefaultCart = () => {
 
 export const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
+  const [cartCount, setCartCount] = useState(0);
 
   useEffect(() => {
     localStorage.setItem("myCart", JSON.stringify(cartItems))
@@ -31,11 +41,13 @@ export const ShopContextProvider = (props) => {
 
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
-    
+    setCartCount(cartCount + 1)
   };
 
   const removeFromCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+    setCartCount(cartCount - 1)
+
   };
 
   const updateCartItemCount = (newAmount, itemId) => {
@@ -45,19 +57,20 @@ export const ShopContextProvider = (props) => {
   const checkout = () => {
     setCartItems(getDefaultCart());
   };
+  console.log(typeof(cartCount))
 
   // useEffect(() => {
   //   localStorage.setItem("myCart", JSON.stringify(cartItems))
   // }, [cartItems])
 
-  const getLocalCartData = () => {
-    let localCartData = localStorage.getItem("myCart")
-    if(localCartData.length != {}){
-      return JSON.parse(localCartData)
-    }else {
-      return {};
-    }
-  }
+  // const getLocalCartData = () => {
+  //   let localCartData = localStorage.getItem("myCart")
+  //   if(localCartData.length != {}){
+  //     return JSON.parse(localCartData)
+  //   }else {
+  //     return {};
+  //   }
+  // }
 
   const contextValue = {
     cartItems,
@@ -66,6 +79,7 @@ export const ShopContextProvider = (props) => {
     removeFromCart,
     getTotalCartAmount,
     checkout,
+    cartCount,
   };
 
   return (
