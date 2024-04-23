@@ -12,11 +12,9 @@ export const YourCart = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="">
+    <div className="cart-container">
       <div className="your-cart-items">
-        <hr />
-        <h1>Your Cart Items</h1>
-        <hr />
+        <h2>Your Cart Items</h2>
       </div>
       <div className="cart">
         {data.map((product) => {
@@ -28,8 +26,8 @@ export const YourCart = () => {
 
       {totalAmount > 0 ? (
         <div className="checkout">
-          <p><b> Subtotal: ${totalAmount} </b></p>
-          <button onClick={() => navigate("/product")}> Continue Shopping </button>
+          <hr />
+          <p> <span>Subtotal:</span> ${totalAmount} </p>
           <button
             onClick={() => {
               checkout();
