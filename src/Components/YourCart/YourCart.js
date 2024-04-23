@@ -27,7 +27,7 @@ export const YourCart = () => {
       {totalAmount > 0 ? (
         <div className="checkout">
           <hr />
-          <p> <span>Subtotal:</span> ${totalAmount} </p>
+          <p> <span>Sub-Total: $ {totalAmount} </span> </p>
           <button
             onClick={() => {
               checkout();
@@ -38,7 +38,7 @@ export const YourCart = () => {
           </button>
         </div>
       ) : (
-        <h1> Your Shopping Cart is Empty</h1>
+        <h2> Your Shopping Cart is Empty</h2>
       )}
     </div>
   );
