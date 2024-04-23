@@ -20,6 +20,7 @@
 .cartItem b{
   color: #007a5a;
   text-align: left;
+  font-size: 20px;
 }
 
 .cartItem img{
@@ -39,11 +40,11 @@
 .checkout span{
   font-size: 24px;
   font-weight: 600;
-  margin-right: 26px;
+  margin-right: 42px;
 }
 
 .checkout button {
-  margin: 12px;
+  margin-right: 42px;
   display: inline-block;
   outline: 0;
   border: 0;

@@ -21,7 +21,7 @@ export const DisplayCart = (props) => {
             />
           <button onClick={() => addToCart(id)}> + </button>
         </div>
-          <p>  ${price}.00</p>
+          <b>  ${price}.00</b>
       </div>
   );
 };
