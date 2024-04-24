@@ -1,10 +1,11 @@
 import React from "react";
 import {data} from "../../data/items";
+import "./FilterBtn.css"
 
 const FilterBtn = ({ filterItem, setItem, menuItems }) => {
   return (
     <>
-      <div className="d-flex justify-content-center">
+      <div className="filter-btn">
         {menuItems.map((Val, id) => {
           return (
             <button
