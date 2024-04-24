@@ -21,7 +21,7 @@ const Product = () => {
             setItem={setItem}
             menuItems={menuItems}
           />
-      <Items/>
+      <Items item={item}/>
     </>
   )
 }
