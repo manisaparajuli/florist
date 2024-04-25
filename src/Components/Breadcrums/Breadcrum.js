@@ -5,7 +5,7 @@ const Breadcrum = (props) => {
   const {product } = props;
   return (
     <div className='breadcrum'>
-      "Home-- Product -- {product.name} " 
+      Home-- Product -- {product.name} 
     </div>
   )
 }
