@@ -1,9 +1,10 @@
 import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import Breadcrum from '../Breadcrums/Breadcrum'
-import {data} from '../../data/items.js'
+import { data } from '../../data/items.js'
 import "./ViewItem.css"
 import { ShopContext } from '../../Context/shop-contex.js'
+import { Link } from 'react-router-dom'
 
 
 
@@ -32,8 +33,26 @@ const ViewItem = () => {
           <p>{product.careTips}</p>
         </div>
       </div>
-      <h4>Similar products:</h4>
-      <p>TODO: use category to suggest similar products.</p>
+      <h2 className='related-heading'>Related Products:</h2>
+      <div className='related-card'>
+        {data.map((Val) => {
+          if(Val.category === product.category){
+            return (
+                  <div  className='item' key={Val.id}>
+                  <Link to={`/product/${Val.id}`}><img src={Val.image}  className='card-image' alt="" onClick={window.scrollTo(0,0)} /></Link>
+                    <div className="buttom-card">
+                      <div className='card-content'>
+                        <h5>{Val.name}</h5>
+                        <h5>$ {Val.price}.00</h5> <br />
+                      </div>
+                      <button className='Add-to-cart' onClick={() => addToCart(Val.id)}>
+                        Add to cart {cartItems[Val.id] > 0 && <>({cartItems[Val.id]}) </>}
+                      </button>
+                      </div>
+                    </div>)
+                  }
+            })}
+        </div>
     </div>
   )
 }

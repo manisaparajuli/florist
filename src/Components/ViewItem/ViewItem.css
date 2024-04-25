@@ -104,3 +104,14 @@ input:checked ~ h3 ~ div.p{
 a{
   color:steelblue;
 }
+.related-card{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin: 16px 42px;
+}
+.related-heading{
+  text-align: center;
+  margin-top: 28px;
+  
+}

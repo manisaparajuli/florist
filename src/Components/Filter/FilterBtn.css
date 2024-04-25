@@ -7,4 +7,9 @@
   font-weight: 500;
   padding: 4px 12px;
   margin: 4px;
+  color: #007a5a;
+}
+
+.filter-btn button:focus {
+  background-color: #ffd700;
 }
