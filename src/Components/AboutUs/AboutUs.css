@@ -71,3 +71,44 @@
   color: green;
 
 }
+
+@media (max-width: 600px){
+  .mission-first-section{
+    flex-direction: column;
+    margin: 16px;
+  }
+  .mission-first-section img{
+    width: 45%;
+    margin-bottom: 12px;
+  }
+  .first-section-content{
+    padding: 0px;
+    width: 80%;
+  }
+  .growth-section{
+    margin: 16px;
+  }
+  .growth-section-content{
+    flex-direction: column;
+  }
+  .growth-section-content div{
+    width: 80%;
+    padding: 8px;
+  }
+  .mission-container{
+    flex-direction: column;
+    margin: 48px;
+  }
+  .mission-container img{
+    left: 0px;
+    top: 0px;
+  }
+  .mission-content{
+    padding: 0px;
+    width: 100%;
+  }
+  .aboutus-second-container{
+    margin: 48px;
+    flex-direction: column;
+  }
+}
