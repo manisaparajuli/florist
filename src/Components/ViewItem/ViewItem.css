@@ -115,3 +115,16 @@ a{
   margin-top: 28px;
   
 }
+@media (max-width: 600px){
+  .product-container{
+    flex-direction: column;
+    margin: 12px;
+
+  }
+  .product-container img {
+    max-width: 50%;
+  }
+  .related-card{
+    flex-direction: column;
+  }
+}

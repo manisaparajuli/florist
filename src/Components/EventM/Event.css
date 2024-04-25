@@ -89,3 +89,30 @@
 .fourth-section-content button:hover{
   box-shadow: 0 8px 22px 0 rgb(37 44 97 / 15%), 0 4px 6px 0 rgb(93 100 148 / 20%);
 }
+
+@media (max-width: 600px){
+  .second-section{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .second-section .second-content{
+    width: 100%;
+  }
+  .images .first-image{
+    display:none;
+  }
+  .images .second-image{
+    position: relative;
+    left: 14px;
+  }
+  .fourth-section{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fourth-section-content{
+    width: 100%;
+  }
+  .fourth-section img{
+    width:40%;
+  }
+}

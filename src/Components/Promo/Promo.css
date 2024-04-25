@@ -19,7 +19,6 @@
 .event-container img{
   width: 180px;
   height: 100%;
-  
 }
 
 
@@ -42,3 +41,17 @@
 .event-container button:hover{
   box-shadow: 0 8px 22px 0 rgb(37 44 97 / 15%), 0 4px 6px 0 rgb(93 100 148 / 20%);
 }
+
+@media (max-width: 600px){
+  .event-container{
+    flex-direction: column;
+    margin: 12px;
+
+  }
+}
+
+@media (min-width: 601px) and (max-width: 678px){
+  .event-container{
+    margin: 12px;
+  }
+} 
