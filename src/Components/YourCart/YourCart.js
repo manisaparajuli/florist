@@ -20,6 +20,8 @@ export const YourCart = () => {
         {data.map((product) => {
           if (cartItems[product.id] !== 0) {
             return <DisplayCart product={product}/>
+          }else{
+            return <p></p>
           }
         })}
       </div>

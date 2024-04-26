@@ -50,8 +50,12 @@ const ViewItem = () => {
                       </button>
                       </div>
                     </div>)
-                  }
-            })}
+                  
+                }else {
+                  return <p style={{display: "none"}}>items not available</p>
+                }
+            })
+          }
         </div>
     </div>
   )

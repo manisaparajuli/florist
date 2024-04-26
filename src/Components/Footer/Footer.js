@@ -1,17 +1,22 @@
 import React from 'react'
 import './Footer.css'
 import {Link} from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 const Footer = () => {
   return (
     <>
       <footer className="footer">
+        
         <div className="container">
           <div className="row">
             <div className="footer-col">
               <h4>company</h4>
               <ul>
                 <li><Link to="/about">about us</Link></li>
-                <li><Link to="#">our services</Link></li>
+                <li><Link to="/events">our services</Link></li>
                 <li><Link to="#">privacy policy</Link></li>
                 <li><Link to="#">affiliate program</Link></li>
               </ul>
@@ -38,10 +43,9 @@ const Footer = () => {
             <div className="footer-col">
               <h4>follow us</h4>
               <div className="social-links">
-                <Link to="#"><i className="fab fa-facebook-f"></i></Link>
-                <Link to="#"><i className="fab fa-twitter"></i></Link>
-                <Link to="#"><i className="fab fa-instagram"></i></Link>
-                <Link to="#"><i className="fab fa-linkedin-in"></i></Link>
+                <Link to="#"><FontAwesomeIcon icon={faFacebookF} /></Link>
+                <Link to="#"><FontAwesomeIcon icon={faInstagram}/></Link>
+                <Link to="#"><FontAwesomeIcon icon={faLinkedin} /></Link>
               </div>
             </div>
           </div>

@@ -6,6 +6,7 @@ import brideBouquet from "../Assests/wedding-bouquet.jpg"
 import Promo from '../Promo/Promo'
 import decors from "../Assests/decors.jpeg"
 
+
 const Event = () => {
   return (
     <>
