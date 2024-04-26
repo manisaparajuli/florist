@@ -85,3 +85,9 @@
   border: none;
   margin: 4px 4px 4px 12px;
 }
+
+@media (max-width: 480px){
+  .cart-container{
+    margin: 6px;
+  }
+}

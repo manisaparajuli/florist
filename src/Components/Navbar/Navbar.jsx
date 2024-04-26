@@ -34,6 +34,7 @@ const Navbar = () => {
           <li onClick={() => handleItemClick('product')} className={activeItem === 'product' ? 'active' : ''}><Link to="/product" style={{textDecoration: "none", color: "inherit"}}>Product</Link></li>
           <li onClick={() => handleItemClick('wedding&event')} className={activeItem === 'wedding&event' ? 'active' : ''}> <Link to="/events" style={{textDecoration: "none", color: "inherit"}}>Wedding & Event</Link></li>
           <li onClick={() => handleItemClick('aboutUs')} className={activeItem === 'aboutUs' ? 'active' : ''}><Link to="/about" style={{textDecoration: "none", color: "inherit"}}>About Us</Link></li>
+          <li className='login-btn' ><Link to="/cart" style={{textDecoration: "none", color: "inherit"}}>Cart</Link></li>
           <li className='login-btn' ><Link to="/authentication" style={{textDecoration: "none", color: "inherit"}}>Login</Link></li>
 
         </ul>
