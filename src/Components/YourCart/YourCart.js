@@ -14,7 +14,7 @@ export const YourCart = () => {
   return (
     <div className="cart-container">
       <div className="your-cart-items">
-        <h2>Your Cart Items</h2>
+        <h2 >Your Cart Items</h2>
       </div>
       <div className="cart">
         {data.map((product) => {
